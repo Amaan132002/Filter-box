@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ----------------- LINKS ------------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="js/scriptingforjs.js"></script>
+    
+
+    <!-- ----------------- LINKS ------------------------------- -->
+
+    <title>Filter Box</title>
+  </head>
+
+  <body>
+
+    <div class="my-5 container">
+      <div class="row">
+        <div class="col-12"><img class="img-fluid" src="images/childrenbookbanner.jpg"/> </div>
+      </div>
+    </div>
+
+    <div class="container filterbox">
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+          <ul class="m-0 list-inline">
+            
+            <a class="a" id="col4">
+              <li class="list-inline-item"><i class="fas fa-th"></i></li></a>
+          
+              <a class="a" id="col3">
+              <li class="list-inline-item"><i class="fas fa-th-large"></i></li ></a>
+          
+                <a class="a" id="col1">
+              <li class="mx-1 list-inline-item"><i class="fas fa-bars"></i></li>
+            </a>
+
+            <li class="list-inline-item">Showing 1 to 9 of 909 items</li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="m-0 downloadbutton list-inline">
+            <span class="download_book">
+              <li class="list-inline-item"><a href="javascript:void(0)"
+                onclick="window.open('https://www.progressivebooks.net/books/downloadbooks/101?type=excel');"
+                >Download in Excel</a></li>
+            
+             <li class="list-inline-item">|</li> 
+              <li class="list-inline-item"><a
+                href="javascript:void(0)"
+                onclick="window.open('https://www.progressivebooks.net/books/downloadbooks/101?type=pdf');"
+                >Download in PDF</a></li>
+              </span>
+          </ul>
+        </div>
+
+        <div class="col-4 col-md-6 col-lg-2" style="text-align:right">
+          <label class="m-0 " for="input-sort">Sort by:</label>
+        </div>
+
+        <div class="col-6 col-md-2 col-lg-2">
+          <select class="form-control" name="input-sort" id="book-sort">
+            <option value="default" selected="">Default</option>
+            <option value="title-ascending">Alphabetically, A-Z</option>
+            <option value="title-descending">Alphabetically, Z-A</option>
+            <option value="publish-year-descending">
+              Publish Year, new to old
+            </option>
+            <option value="publish-year-ascending">
+              Publish Year, old to new
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>     
+    <br/><br/><br/>                 
+    <!-- -------------------------- grids column for 4 and 3 ------------------------------------ -->
+    <div class="container">
+
+      <div class="row" id="gridsCol">
+
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+        <div class="col-3">
+        <div class="divforlistview">
+
+          <div class="c1-3">
+          <img class="imagesincol" src="images/all-you-need-to-know.jpg">
+          </div>
+
+          <div class="c1-9">
+          <a href="#"><h5>ADHESION SCIENCE AND...</h5></a>
+         <p class="img-text">PAK 43470.00</p>
+
+       <button class="my addtocartbtn btn btn-light">Add To Cart</button>
+       <ul class="my list-inline">
+         <br/>
+         <li class="addcart list-inline-item"><a href="#"><i class="fas fa-heart"></i> Add To Wish List</a></li>
+         <li class="list-inline-item"><a href="#"><i class="fas fa-random"></i> View Details</a></li>
+       </ul>
+          </div>
+          </div>
+     </div>
+
+      
+  
+
+      </div>
+ </div>
+
+
+  </body>
+</html>
